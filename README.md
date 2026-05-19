@@ -31,7 +31,7 @@ la PokéAPI para buscar y visualizar información de Pokémon en tiempo real.
 
 ## 🔗 API utilizada
 
-- **PokéAPI** — https://pokeapi.co/api/v2/pokemon/{nombre}
+- **PokéAPI** — https://pokeapi.co/api/v2/pokemon/
 - Pública, gratuita, sin autenticación requerida
 
 ## 👥 Autores
