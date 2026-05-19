@@ -1,0 +1,57 @@
+﻿@model ConsumoApiIA_MVC.Models.PokemonModel
+
+@{
+    ViewBag.Title = "Resultado - " + Model.Name;
+}
+
+<div style="text-align:center; font-family:Arial; margin-top:30px;">
+    <h1>@Model.Name.ToUpper()</h1>
+
+    <img src="@Model.Sprites.Front_Default"
+         alt="@Model.Name"
+         style="width:150px; image-rendering:pixelated;" />
+
+    <table style="margin:20px auto; border-collapse:collapse; width:400px;">
+        <tr style="background:#f2f2f2;">
+            <th style="padding:10px; border:1px solid #ddd;">Atributo</th>
+            <th style="padding:10px; border:1px solid #ddd;">Valor</th>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;">ID</td>
+            <td style="padding:8px; border:1px solid #ddd;">#@Model.Id</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;">Altura</td>
+            <td style="padding:8px; border:1px solid #ddd;">@(Model.Height / 10.0) m</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;">Peso</td>
+            <td style="padding:8px; border:1px solid #ddd;">@(Model.Weight / 10.0) kg</td>
+        </tr>
+        <tr>
+            <td style="padding:8px; border:1px solid #ddd;">Tipo(s)</td>
+            <td style="padding:8px; border:1px solid #ddd;">
+                @string.Join(", ", Model.Types.Select(t => t.Type.Name))
+            </td>
+        </tr>
+    </table>
+
+    <h3>Estadísticas base</h3>
+    <table style="margin:0 auto; border-collapse:collapse; width:400px;">
+        @foreach (var stat in Model.Stats)
+        {
+            <tr>
+                <td style="padding:8px; border:1px solid #ddd; text-align:left;">
+                    @stat.Stat.Name
+                </td>
+                <td style="padding:8px; border:1px solid #ddd;">
+                    @stat.Base_Stat
+                </td>
+            </tr>
+        }
+    </table>
+
+    <br />
+    @Html.ActionLink("← Buscar otro Pokémon", "Index", "Pokemon",
+                     null, new { style = "color:#e74c3c;" })
+</div>

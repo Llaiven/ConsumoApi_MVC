@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Buscador de Pokémon";
+}
+
+<div style="text-align:center; font-family:Arial; margin-top:50px;">
+    <h1>🔍 Buscador de Pokémon</h1>
+    <p>Ingresa el nombre de un Pokémon para ver su información</p>
+
+    @using (Html.BeginForm("Buscar", "Pokemon", FormMethod.Get))
+    {
+        <input type="text" name="nombre" placeholder="Ej: pikachu, charizard"
+               style="padding:10px; width:250px; font-size:16px;" />
+        <button type="submit"
+                style="padding:10px 20px; font-size:16px;
+                       background:#e74c3c; color:white; border:none; cursor:pointer;">
+            Buscar
+        </button>
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <p style="color:red; margin-top:20px;">@ViewBag.Error</p>
+    }
+</div>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36511.14 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsumoApiIA_MVC", "ConsumoApiIA_MVC\ConsumoApiIA_MVC.csproj", "{BF3C0541-A9FF-414D-A5EE-47BD73569A3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF3C0541-A9FF-414D-A5EE-47BD73569A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF3C0541-A9FF-414D-A5EE-47BD73569A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF3C0541-A9FF-414D-A5EE-47BD73569A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF3C0541-A9FF-414D-A5EE-47BD73569A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D66AC1A-BA22-445C-B4A9-10B666075B10}
+	EndGlobalSection
+EndGlobal
