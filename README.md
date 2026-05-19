@@ -36,7 +36,7 @@ la PokéAPI para buscar y visualizar información de Pokémon en tiempo real.
 
 ## 👥 Autores
 
-- [Tu nombre aquí]
+- Steven Brazales, Gregory Jimenez
 
 ## 📚 Materia
 
